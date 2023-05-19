@@ -54,7 +54,7 @@
 
 .task-list {
   display: flex;
-  padding: 2%;
+  padding: 1%;
   margin-right: 16px;
   background-color: #f0f0f0;
   flex-direction: column;
@@ -64,6 +64,7 @@
 .task-title {
   background-color: black;
   color: white;
+  padding: 2%;
 }
 .task-item {
   margin-bottom: 8px;
@@ -72,5 +73,11 @@
   border-radius: 4px;
 }
 .task {
-  margin-top: "2% ";
+  cursor: pointer;
+  margin-top: 2%;
+  padding: 2%;
+  background-color: grey;
+}
+.new-task {
+  margin-top: 2%;
 }

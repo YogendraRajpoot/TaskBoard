@@ -3,10 +3,18 @@ import InputTask from "./InputTask";
 
 const TaskBoard = () => {
   const [lists, setLists] = useState([
-    { id: 1, title: "Task 1", tasks: [] },
+    {
+      id: 1,
+      title: "Task 1",
+      tasks: [
+        { id: 0, name: "new project" },
+        { id: 1, name: "new task" },
+      ],
+    },
     { id: 2, title: "Task 2", tasks: [] },
     { id: 3, title: "Task 3", tasks: [] },
   ]);
+  console.log(lists[0].tasks);
   const [newListTitle, setNewListTitle] = useState("");
 
   const handleDragStart = (e, listId, taskId) => {
