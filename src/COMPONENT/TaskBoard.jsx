@@ -69,7 +69,7 @@ const TaskBoard = () => {
           onDragOver={(e) => handleDragOver(e)}
           onDrop={(e) => handleDrop(e, list.id)}
         >
-          <h2>{list.title}</h2>
+          <p className="task-title">{list.title}</p>
           {list.tasks.map((task) => (
             <div
               key={task.id}

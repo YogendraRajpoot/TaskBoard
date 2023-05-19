@@ -38,6 +38,14 @@
   }
 }
 
+.navbar {
+  width: 100%;
+  background-color: black;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  color: white;
+}
+
 .task-board {
   display: flex;
   overflow-x: auto;
@@ -45,15 +53,24 @@
 }
 
 .task-list {
-  flex: 0 0 300px;
+  display: flex;
+  padding: 2%;
   margin-right: 16px;
-  padding: 16px;
   background-color: #f0f0f0;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
 }
-
+.task-title {
+  background-color: black;
+  color: white;
+}
 .task-item {
   margin-bottom: 8px;
   padding: 8px;
   background-color: #fff;
   border-radius: 4px;
+}
+.task {
+  margin-top: "2% ";
 }
